@@ -1,3 +1,4 @@
 main{
     background-color: lightblue;
+    flex-grow: 1;
 }
