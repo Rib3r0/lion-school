@@ -1,4 +1,61 @@
 footer{
     background-color: lightgoldenrodyellow;
-    height: 100px;
+    height: 140px;
+    background-color: #3347B0;
+    display: flex;
+    align-items: center;
+    padding-left: 98px;
+    padding-right: 98px;
+    justify-content: space-between;
+
+}
+#icons-contact{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    font-size: 1.5rem;
+}
+
+#contact{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    font-size: 1rem;
+}
+#contact i{
+    font-size: 1.5rem;
+    width: 10px;
+}
+#contact div{
+    display: flex;
+    align-items: center;
+    width: 256px;
+    gap: 24px;
+}
+#copyright{
+    font-size: 1.25rem;
+    font-weight: 400;
+
+}
+
+#social-media{
+    display: flex;
+    gap: 20px;
+    font-size: 1.5rem;
+}
+#social-media div{
+    display: grid;
+    place-items: center;
+    height: 48px;
+    width: 48px;
+    border-radius: 100%;
+    border-color: #fff;
+    border-style: solid;
+    border-width: 2px;
+}
+#social-media div:hover{
+    color: #3347B0;
+    background-color: #fff;
+    transition: .5s;
+    cursor: pointer;
 }
