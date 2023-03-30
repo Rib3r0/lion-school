@@ -9,8 +9,23 @@
 }
 #turma__filtro{
     grid-area: filtro;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 40px;
+    padding-right: 40px;
+    align-items: center;
     background-color:#BCC2E5;
 }
+#legenda{
+    display: flex;
+    gap: 20px;
+}
+#legenda div{
+    background-color: hotpink;
+    height: 20px;
+    width:20px;
+}
+
 #turma__titulo{
     grid-area: titulo;
     display: grid;
