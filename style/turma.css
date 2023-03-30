@@ -1,0 +1,39 @@
+#TURMA{
+    display: grid;
+    grid-template-areas:
+    "filtro"
+    "titulo"
+    "alunos" 
+    ;
+    grid-template-rows: 50px 150px 1fr;
+}
+#turma__filtro{
+    grid-area: filtro;
+    background-color:#BCC2E5;
+}
+#turma__titulo{
+    grid-area: titulo;
+    display: grid;
+    place-items: center;
+    font-size: 4rem;
+    color: #3347B0;
+}
+#turma__alunos{
+    grid-area: alunos;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 62px;
+    justify-content: center;
+    padding-bottom: 114px;
+}
+.turma__card{
+    height: 300px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 16px;
+    line-height: 27px;
+    background-color: #3347B0;
+}

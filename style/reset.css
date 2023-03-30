@@ -4,10 +4,20 @@
     box-sizing: border-box;
 }
 body{
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: 100px 1fr 140px;
     font-family: 'Roboto', sans-serif;
     color: #fff;
+    overflow-x: hidden;
+}
+a{
+    font-style: normal;
+    font: inherit;
+    color: #fff;
+    text-decoration: none;
 }
 
+.unfocus{
+    display: none;
+}

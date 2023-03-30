@@ -1,61 +1,23 @@
 main{
     flex-grow: 1;
-    margin-left: 96px;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    overflow: hidden;
+    width: 100vw;
 }
-#info{
-    display: flex;
-    flex-direction: column;
-    color: #000;
-    font-size: 3.5rem;
-    font-weight: 300;
-    gap: 44px;
-    width: 471px;
+section{
+    height: 100%;
+    min-width: 100%;
 }
-#destaque{
-    color: #3347B0;
-    font-weight: 600;
-}
-.card{
-    background-color: #3347B0;
-    width: 400px;
-    height: 200px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 12px 12px 4px #3347B066;
-    font-size: 4rem;
-    gap: 24px;
-    font-weight: 500;
-}
-.card:hover{
-    border-style: solid;
-    border-width: 2px;
-    border-color: #000;
-}
-#cursos{
-    display: flex;
-    flex-direction: column;
-    min-width: 300px;
-    flex-wrap: wrap;
-    width: 500px;
-    gap: 50px;
-    padding-right: 20px;
-    height: 500px;
-    max-height: 500px;
-    overflow-y:auto;
-}
-/* width */
+
+
 ::-webkit-scrollbar {
     width: 20px;
     height: 15px;
+    position: absolute;
 }
  
 ::-webkit-scrollbar-thumb {
     background: #0002;
-    border-radius: 10px;
 }
 ::-webkit-scrollbar-thumb:hover {
     background: #0005;
