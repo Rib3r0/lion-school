@@ -13,7 +13,8 @@
     <link rel="stylesheet" href="/style/footer.css">
     <link rel="stylesheet" href="/style/home.css">
     <link rel="stylesheet" href="/style/turma.css">
-    <script src="./js/app.js" defer></script>
+    <link rel="stylesheet" href="/style/aluno.css">
+    <script type="module" src="./js/app.js" defer></script>
     <title>Lion School</title>
 </head>
 <body>
@@ -37,23 +38,30 @@
                 <img src="./img/studant.png" alt="">
             </div>
             <div id="home__cursos">
-                <div class="home__card">
+                <!-- <div class="home__card">
                     <i class="fa-sharp fa-solid fa-code"></i>
                     <p>DS</p>
                 </div>
                 <div class="home__card">
                     <i class="fa-sharp fa-solid fa-code"></i>
                     <p>DS</p>
-                </div>
+                </div> -->
         </section>
         <section id="TURMA">
             <div id="turma__filtro">
-                <p>status</p>
+                <div id="status_turma">
+                    <a id="status_turma_selected">Status</a>
+                    <ul>
+                        <li id="status_turma_status"><span>Status</span></li>
+                        <li id="status_turma_finalizado"><span>Finalizado</span></li>
+                        <li id="status_turma_cursando"><span>Cursando</span></li>
+                    </ul>
+                </div>
                 <div id="legenda">
                     <p>LEGENDA</p>
-                    <div></div>
+                    <div id="cursando"></div>
                     <p>Cursando</p>
-                    <div></div>
+                    <div id="finalizado"></div>
                     <p>Finalizado</p>
                 </div>
             </div>
@@ -81,12 +89,83 @@
                     <img id="aluno__img" src="./img/mulher.png" alt="" srcset="">
                     <p id="aluno__nome">HÉLIDA BENTO DE OLIVEIRA LINS</p>
                 </div>
+                <div class="turma__card">
+                    <img id="aluno__img" src="./img/mulher.png" alt="" srcset="">
+                    <p id="aluno__nome">HÉLIDA BENTO DE OLIVEIRA LINS</p>
+                </div>
+                <div class="turma__card">
+                    <img id="aluno__img" src="./img/mulher.png" alt="" srcset="">
+                    <p id="aluno__nome">HÉLIDA BENTO DE OLIVEIRA LINS</p>
+                </div>
+                <div class="turma__card">
+                    <img id="aluno__img" src="./img/mulher.png" alt="" srcset="">
+                    <p id="aluno__nome">HÉLIDA BENTO DE OLIVEIRA LINS</p>
+                </div>
+                <div class="turma__card">
+                    <img id="aluno__img" src="./img/mulher.png" alt="" srcset="">
+                    <p id="aluno__nome">HÉLIDA BENTO DE OLIVEIRA LINS</p>
+                </div>
+                <div class="turma__card">
+                    <img id="aluno__img" src="./img/mulher.png" alt="" srcset="">
+                    <p id="aluno__nome">HÉLIDA BENTO DE OLIVEIRA LINS</p>
+                </div>
+                <div class="turma__card">
+                    <img id="aluno__img" src="./img/mulher.png" alt="" srcset="">
+                    <p id="aluno__nome">HÉLIDA BENTO DE OLIVEIRA LINS</p>
+                </div>
 
             </div>
 
         </section>
         <section id="ALUNO">
-
+            <div id="profile">
+                <img id="aluno__img__profile" src="./img/mulher.png" alt="" srcset="">
+                <p id="aluno__nome">HÉLIDA BENTO DE OLIVEIRA LINS</p>
+            </div>
+            <div id="boletim">
+                <div class="boletim__materia">
+                    <span class="boletim__nota">90</span>
+                    <div class="boletim__barra">
+                        <div class="boletim__barra__porcentagem boletim__barra__azul"></div>
+                    </div>
+                    <span class="boletim__sigla">SOP</span>
+                </div>
+                <div class="boletim__materia">
+                    <span class="boletim__nota">90</span>
+                    <div class="boletim__barra">
+                        <div class="boletim__barra__porcentagem boletim__barra__amarela"></div>
+                    </div>
+                    <span class="boletim__sigla">SOP</span>
+                </div>
+                <div class="boletim__materia">
+                    <span class="boletim__nota">90</span>
+                    <div class="boletim__barra">
+                        <div class="boletim__barra__porcentagem boletim__barra__vermelha"></div>
+                    </div>
+                    <span class="boletim__sigla">SOP</span>
+                </div>
+                <div class="boletim__materia">
+                    <span class="boletim__nota">90</span>
+                    <div class="boletim__barra">
+                        <div class="boletim__barra__porcentagem"></div>
+                    </div>
+                    <span class="boletim__sigla">SOP</span>
+                </div>
+                <div class="boletim__materia">
+                    <span class="boletim__nota">90</span>
+                    <div class="boletim__barra">
+                        <div class="boletim__barra__porcentagem"></div>
+                    </div>
+                    <span class="boletim__sigla">SOP</span>
+                </div>
+                <div class="boletim__materia">
+                    <span class="boletim__nota">90</span>
+                    <div class="boletim__barra">
+                        <div class="boletim__barra__porcentagem"></div>
+                    </div>
+                    <span class="boletim__sigla">SOP</span>
+                </div>
+            </div>
         </section>
         
 

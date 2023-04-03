@@ -7,23 +7,59 @@
     ;
     grid-template-rows: 50px 150px 1fr;
 }
+#status_turma{
+    overflow-y: hidden;
+    height: 19px;
+    align-self:start;
+    width: 150px;
+    transition: 0.5s;
+    transform: translate(0px,15px);
+}
+#status_turma a:hover{
+    cursor: pointer;
+}
+#status_turma li:hover{
+    cursor: pointer;
+}
+#status_turma ul{
+    background-color: #3347B0;
+    align-self: end;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 14px;
+    
+}
+#status_turma li{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 8px;
+}
+
 #turma__filtro{
     grid-area: filtro;
     display: flex;
     justify-content: space-between;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 95px;
+    padding-right: 95px;
     align-items: center;
     background-color:#BCC2E5;
 }
 #legenda{
     display: flex;
     gap: 20px;
+    color: #3347B0;
+    font-weight: 500;
 }
 #legenda div{
-    background-color: hotpink;
     height: 20px;
     width:20px;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.5);
+}
+#cursando{
+    background-color: #3347B0;
+}
+#finalizado{
+    background-color: #E5B657;
 }
 
 #turma__titulo{
@@ -51,4 +87,9 @@
     gap: 16px;
     line-height: 27px;
     background-color: #3347B0;
+}
+
+#aluno__img{
+    height: 200px;
+    width: 200px;
 }

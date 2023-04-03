@@ -17,6 +17,9 @@ a{
     color: #fff;
     text-decoration: none;
 }
+ul{
+    list-style: none;
+}
 
 .unfocus{
     display: none;

@@ -33,6 +33,7 @@
     border-style: solid;
     border-width: 2px;
     border-color: #000;
+    cursor: pointer;
 }
 #home__cursos{
     display: flex;
