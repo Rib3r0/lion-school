@@ -1,8 +1,9 @@
 'use strict'
 import {getCursos} from './cursos.js'
+import {getAlunosCurso} from './cursos.js'
 
 let cursos = await getCursos()
-console.log(cursos);
+console.log(getAlunosDoCurso("DS"))
 
 
 var voltarButtom = document.getElementById("voltar")
@@ -44,8 +45,11 @@ function createCardCurso(curso) {
     home_cursos.append(cursoCard)
 
 }
-//cursoSelect[0].addEventListener("click", changePage)
-//alunoSelect[0].addEventListener("click", changePage)
+
+function getAlunosDoCurso(curso) {
+    let alunos = getAlunosCurso("curso")
+    return alunos.alunos
+}
 
 function changePage (){
     currentPage.style.display = "none"

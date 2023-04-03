@@ -11,3 +11,16 @@ export const getCursos = async () =>  {
     return cursos
 
 }
+
+export const getAlunosCurso = async (curso) =>  {
+
+    let url = `http://localhost:8080/v1/lion-school/alunos/materia?curso=${curso}`
+
+    let response = await fetch(url)
+
+    let alunos = await response.json()
+
+    return alunos
+
+}
+
