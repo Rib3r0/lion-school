@@ -77,6 +77,12 @@
     justify-content: center;
     padding-bottom: 114px;
 }
+.turma__alunos__container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 62px;
+    justify-content: center;
+}
 .turma__card{
     height: 300px;
     width: 200px;
@@ -86,10 +92,22 @@
     align-items: center;
     gap: 16px;
     line-height: 27px;
+    text-transform: uppercase;
+}
+.turma__card p{
+    padding: 0px 20px 20px 20px;
+}
+.turma__card:hover{
+    cursor: pointer;
+}
+.turma__card__cursando{
     background-color: #3347B0;
 }
+.turma__card__finalizado{
+    background-color: #E5B657
+}
 
-#aluno__img{
+.aluno__img{
     height: 200px;
     width: 200px;
 }

@@ -8,7 +8,9 @@
     font-weight: 500;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     font-size: 18px;
-}#aluno__img__profile{
+    text-transform: uppercase;
+}
+.aluno__img__profile{
     height: 400px;
     width: 400px;
 }
@@ -18,6 +20,18 @@
     width: 500px;
     box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.25);
     display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    color: #3347B0;
+    font-weight: 700;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.boletim__div{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
     margin-left: 70px;

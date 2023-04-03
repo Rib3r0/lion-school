@@ -20,7 +20,19 @@ export const getAlunosCurso = async (curso) =>  {
 
     let alunos = await response.json()
 
-    return alunos
+    return alunos.alunos
+
+}
+
+export const getStatus = async (matricula) =>  {
+
+    let url = `http://localhost:8080/v1/lion-school/alunos/numero?matricula=${matricula}`
+
+    let response = await fetch(url)
+
+    let matriculaAlunos = await response.json()
+
+    return matriculaAlunos
 
 }
 
