@@ -4,6 +4,7 @@ import {getAlunosCurso} from './cursos.js'
 import {getStatus} from './cursos.js'
 
 let cursos = await getCursos()
+let cursoSelected = ""
 
 
 
@@ -41,19 +42,21 @@ function createCardCurso(curso) {
     cursoCard.addEventListener("click", changePage)
     cursoCard.addEventListener("click", () =>{
         createCardAlunos((curso.sigla))
+        cursoSelected = curso.sigla
     })
+    
 
     home_cursos.append(cursoCard)
 
 }
 
-async function createCardAlunos(curso) {
+async function createCardAlunos(curso, filtro) {
     let alunos = await getAlunosCurso(curso)
     let titulo = alunos[0].curso[0].nome
     turma__titulo.textContent = titulo
 
-    let teste = document.createElement('div')
-    teste.classList.add("turma__alunos__container")
+    let cards = document.createElement('div')
+    cards.classList.add("turma__alunos__container")
     alunos.forEach( async aluno  =>  {
         let card = document.createElement('div')
         card.classList.add("turma__card")
@@ -85,10 +88,15 @@ async function createCardAlunos(curso) {
         }
         )
         
-    
-        teste.append(card)
+        if(matricula.status == filtro){
+            cards.append(card)
+        }
+        if(filtro == null || filtro == "Status"){
+            cards.append(card)
+        }
+        
     });
-    turma_alunos.replaceChildren(teste )
+    turma_alunos.replaceChildren(cards)
     
 
 
@@ -199,6 +207,9 @@ checked.appendChild(checkMark)
 function filter(){
     let filtro =  document.getElementById(this.id)
     status_turma_selected.textContent = filtro.textContent
+
+    createCardAlunos(cursoSelected, filtro.textContent)
+
 
 
     checked.removeChild(checkMark)

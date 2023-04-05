@@ -68,6 +68,7 @@
     place-items: center;
     font-size: 4rem;
     color: #3347B0;
+    text-align: center;
 }
 #turma__alunos{
     grid-area: alunos;
