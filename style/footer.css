@@ -58,3 +58,18 @@ footer{
     transition: .5s;
     cursor: pointer;
 }
+
+@media(max-width:960px){
+    footer{
+        height: 250px;
+        flex-direction: column;
+        padding-left: 0px;
+        padding-right: 0px;
+        justify-content: space-evenly;
+    
+    }
+    #copyright{
+        text-align: center;
+    
+    }
+}

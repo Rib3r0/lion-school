@@ -5,7 +5,7 @@
     "titulo"
     "alunos" 
     ;
-    grid-template-rows: 50px 150px 1fr;
+    grid-template-rows: 60px 150px 1fr;
 }
 #status_turma{
     overflow-y: hidden;
@@ -111,4 +111,36 @@
 .aluno__img{
     height: 200px;
     width: 200px;
+}
+
+@media(max-width:960px){
+    #turma__filtro{
+        display: flex;
+        justify-content: unset;
+        padding-left: 0px;
+        padding-right: 0px;
+        align-items: unset;
+    }
+    #legenda{
+        display: none;
+    }
+    #status_turma{
+        overflow-y: hidden;
+        height: 19px;
+        align-self:start;
+        width: 100%;
+        transition: 0.5s;
+        transform: translate(0px,15px);
+    }
+    #status_turma_selected{
+        width: 100%;
+        padding-left: 20px;
+    }
+    #turma__titulo{
+        font-size: 2.8rem;
+    }
+    .turma__alunos__container{
+        padding-top: 20px;
+        gap: 62px;
+    }
 }

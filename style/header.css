@@ -33,3 +33,12 @@ header{
 #voltar:hover{
     cursor: pointer;
 }
+
+
+@media(max-width:960px){
+    header{
+        justify-content: space-evenly;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+}

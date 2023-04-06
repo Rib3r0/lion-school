@@ -21,4 +21,10 @@ section{
 }
 ::-webkit-scrollbar-thumb:hover {
     background: #0005;
-  }
+}
+
+@media(max-width:960px){
+    main{
+        width: unset;
+    }
+}

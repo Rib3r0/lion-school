@@ -76,3 +76,15 @@
     align-items: center;
     justify-content: space-evenly;
 }
+
+/* TABLET */
+@media(max-width:960px){
+    #ALUNO{
+        flex-direction: column;
+    }
+    #profile{
+        height: 500px;
+        width: 500px;
+    }
+
+}
